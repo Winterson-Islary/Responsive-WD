@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fauxica</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Poppins:wght@200;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div id="wrapper" class="max-w-[600px] md:max-w-[1300px] mx-auto">
+      <header class="flex justify-between items-center pl-10">
+        <a href="#"><img src="/images/logo.svg" alt="Fauxica logo"></a>
+        <nav class="m-16">
+          <ul class="hidden md:flex gap-16 text-2xl uppercase">
+            <li><a href="#" class="">Home</a></li>
+            <li><a href="#">Products</a></li>
+            <li><a href="#">Gallery</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </nav>
+      </header>
+     <main class="flex flex-col gap-[8em] mt-[5em] md:mt-[9em] px-10 md:px-10 lg:flex-row">
+      <div id="left-col" class="w-full lg:w-6/12">
+        <h1 class="text-6xl mb-10 md:text-[5.2rem] font-playfair">Quality apparel without the price tag</h1>
+        <p id="subhead" class="text-[1.8rem]">Tired of spending premium price for not so premium apparels? If so, Fauxica is the right place for you to get premium apparel for not so premium price.</p>
+        <div id="cta-btns" class="flex gap-[2em] my-[5em]">
+          <a href="#" id="primary-cta" class="bg-[#F1E2D1] text-[1.5rem] md:text-[1.8rem] font-bold rounded-[1.9em] py-[1em] px-[2em] ">Browse our collection</a>
+          <a href="#" id="secondary-cta" class="flex gap-[0.2em] text-[1.5rem] lg:text-[1.8rem] py-[1em] items-center">
+            <span>Spring '23 Collection</span>
+            <svg viewBox="0 0 19 9" fill="none" class="w-[20px]">
+            <path d="M18.3536 4.85355C18.5488 4.65829 18.5488 4.34171 18.3536 4.14645L15.1716 0.964466C14.9763 0.769204 14.6597 0.769204 14.4645 0.964466C14.2692 1.15973 14.2692 1.47631 14.4645 1.67157L17.2929 4.5L14.4645 7.32843C14.2692 7.52369 14.2692 7.84027 14.4645 8.03553C14.6597 8.2308 14.9763 8.2308 15.1716 8.03553L18.3536 4.85355ZM0 5H18V4H0V5Z" fill="black"/>
+            </svg>
+          </a>
+        </div>
+        <div id="news" class="flex gap-[3em] p-[1.8em] md:p-[5em] border border-black rounded-[0.8em] relative">
+          <p id="employees" class="text-[3.3rem] font-light leading-none">50K</p>
+          <p id="details" class="text-[1.4rem]">We're proud to announce that we now employ a workforce of over <strong>50,000</strong>. It's all possible because of you.</p>
+        </div>
+      </div>
+      <div id="right-col" class="grow grid gap-[1.2em] md:gap-[2.3em] grid-cols-2">
+          <div id="card1" class="card h-[430px] lg:h-auto rounded-[0.8em] p-[1.1em] flex items-end bg-[url('./images/clothing1.jpg')] bg-[size:150%] bg-no-repeat relative">
+              <div id="card-details" class="bg-white rounded-[0.6em] p-[2em] w-full flex items-center justify-between ">
+                <div>
+                  <a href="#" id="product-title" class="text-[1.6rem] font-bold">Fauxica Trends</a>
+                  <p class="text-[1.4rem] ">Sweaters</p>
+                </div>
+                <p id="product-price" class="text-[1.8rem]">$49</p>
+              </div>
+          </div>
+          <div id="card2" class="card rounded-[0.8em] p-[1.1em] flex items-end bg-[url('./images/clothing2.jpg')] bg-[size:150%] bg-no-repeat">
+              <div id="card-details" class="bg-white rounded-[0.6em] p-[2em] w-full flex items-center justify-between ">
+                <div>
+                  <a href="#" id="product-title" class="text-[1.6rem] font-bold">Fauxica Winter Wear</a>
+                  <p class="text-[1.4rem] ">Jackets</p>
+                </div>
+                <p id="product-price" class="text-[1.8rem]">$49</p>
+              </div>
+          </div>
+          <div id="card3" class="card rounded-[0.8em] p-[1.1em] flex items-end bg-[url('./images/clothing3.jpg')] bg-[size:150%] bg-no-repeat">
+              <div id="card-details" class="bg-white rounded-[0.6em] p-[2em] w-full flex items-center justify-between ">
+                <div>
+                  <a href="#" id="product-title" class="text-[1.6rem] font-bold">Fauxica Sport</a>
+                  <p class="text-[1.4rem] ">Running Shoes</p>
+                </div>
+                <p id="product-price" class="text-[1.8rem]">$49</p>
+              </div>
+          </div>
+      </div>
+     </main> 
+    </div>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>

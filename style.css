@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html{
+	font-size: 62.5%;
+}
+body{
+	font-family: 'Poppins';
+}
+
+#news:before{
+	position: absolute;
+	content: "";
+	background: url(./images/confetti.svg);
+	width: 100px;
+	height: 100px;
+	top: -20px;
+	left: -20px;
+	z-index: 2;
+}
+#right-col{
+	grid-template-areas: 
+		"left right"
+		"left bottom";
+}
+#card1{
+	grid-area: left;
+}
+#card1:before{
+	position: absolute;
+	content: "";
+	background: url(./images/tag.svg) no-repeat;
+	width: 100%;
+	height: 100%;
+	top: 20px;
+	left: -30px;
+	pointer-events: none;
+	z-index: 2;
+}
